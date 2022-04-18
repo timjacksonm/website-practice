@@ -109,16 +109,16 @@ a {
 /* MAIN */
 
 main {
-  margin-top: 176px;
   position: relative;
   height: 1585px;
+  overflow-x: hidden;
 }
 
 .hero-shape {
   background-color: #f2faff;
   position: absolute;
-  top: -88%;
-  right: -23%;
+  top: -60%;
+  right: 0;
   bottom: -1px;
   width: 90%;
   height: 120%;
@@ -137,5 +137,10 @@ main {
 
   .header-left {
     margin-right: 10rem;
+  }
+
+  .hero-shape {
+    top: -65%;
+    right: -26%;
   }
 }
