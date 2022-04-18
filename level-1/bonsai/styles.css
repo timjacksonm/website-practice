@@ -1,5 +1,6 @@
 :root {
   --main-color: #00b289;
+  --hover-main-color: #00a37e;
   --primary-font-color: #0d0d14;
   --secondary-font-color: #4c4d5f;
   --white-font-color: #fff;
@@ -13,15 +14,14 @@
 
 body {
   color: var(--primary-font-color);
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 16px;
 }
 
 a {
   text-decoration: none;
   color: var(--secondary-font-color);
-}
-
-a:hover {
-  color: var(--primary-font-color);
 }
 
 .header,
@@ -50,18 +50,43 @@ a:hover {
   gap: 2px;
 }
 
+.icon > path {
+  fill: var(--secondary-font-color);
+}
+
+.nav-left > a:hover > .icon > path {
+  fill: var(--primary-font-color);
+}
+
+.nav-left > a:hover {
+  color: var(--primary-font-color);
+}
+
 .login {
-  padding: 0.6rem 1rem;
+  padding: 0.7rem 1.2rem;
   border: 1px solid var(--main-color);
   border-radius: 5px;
   margin-right: 1rem;
   color: var(--main-color);
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.login:hover {
+  background-color: var(--main-color);
+  color: var(--white-font-color);
 }
 
 .start-here {
-  padding: 0.6rem 1.5rem;
+  padding: 0.7rem 1.6rem;
   border: 1px solid var(--main-color);
   background-color: var(--main-color);
   border-radius: 5px;
   color: var(--white-font-color);
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.start-here:hover {
+  background-color: var(--hover-main-color);
 }
