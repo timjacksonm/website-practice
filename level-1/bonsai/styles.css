@@ -27,7 +27,11 @@ a {
 /* NAVBAR */
 
 .header {
+  background-color: #fff;
   padding: 2rem 0;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
 }
 
 .header,
@@ -58,7 +62,7 @@ a {
 }
 
 .nav-left > a {
-  gap: 2px;
+  gap: 5px;
 }
 
 .icon > path {
@@ -100,6 +104,26 @@ a {
 
 .start-here:hover {
   background-color: var(--hover-main-color);
+}
+
+/* MAIN */
+
+main {
+  margin-top: 176px;
+  position: relative;
+  height: 1585px;
+}
+
+.hero-shape {
+  background-color: #f2faff;
+  position: absolute;
+  top: -88%;
+  right: -23%;
+  bottom: -1px;
+  width: 90%;
+  height: 120%;
+  border-radius: 94px;
+  transform: rotate(-23deg);
 }
 
 @media only screen and (min-width: 1100px) {
