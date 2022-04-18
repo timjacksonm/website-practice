@@ -28,7 +28,7 @@ a {
 h1 {
   color: var(--header-color);
   font-weight: 300;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
 }
 
 /* NAVBAR */
@@ -146,6 +146,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   min-width: 58rem;
+  margin-bottom: 1rem;
 }
 
 .section-title > h1 {
@@ -252,6 +253,11 @@ input:checked + .slider:before {
   overflow: hidden;
 }
 
+.card-title {
+  color: var(--header-color);
+  letter-spacing: 2px;
+}
+
 .popular-tag {
   background-color: var(--main-color);
   padding: 0.7rem;
@@ -268,14 +274,67 @@ input:checked + .slider:before {
 
 .perk-list {
   list-style: none;
+  padding: 2.5rem 0;
+  color: var(--secondary-font-color);
 }
 
 .perk {
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.new-tag {
+  display: inline-block;
+  padding: 0 4px;
+  border-radius: 1px;
+  background-color: #f8db62;
+  color: #fff;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 .checkmark {
   margin-right: 1rem;
+}
+
+.price-container {
+  display: flex;
+  padding: 2rem 0;
+  font-family: Roboto;
+  font-weight: 900;
+  color: var(--header-color);
+  border-bottom: 2px solid var(--main-color);
+}
+
+.money-symbol {
+  align-self: flex-start;
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+.price-dollar {
+  font-size: 3.5rem;
+  padding: 0 0.5rem;
+}
+
+.price-month {
+  align-self: flex-end;
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+.start-free-btn {
+  color: var(--white-color);
+  background-color: var(--main-color);
+  width: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-radius: 5px;
+  font-weight: 900;
+  border: none;
+}
+
+.start-free-btn:hover {
+  background-color: var(--hover-main-color);
 }
 
 @media only screen and (min-width: 375px) {
@@ -322,11 +381,12 @@ input:checked + .slider:before {
   }
 
   .plan-card {
-    min-width: 29rem;
+    min-width: 28rem;
+    padding: 4rem;
   }
 
   .popular-tag {
-    top: 50px;
-    left: 210px;
+    top: 45px;
+    left: 200px;
   }
 }
