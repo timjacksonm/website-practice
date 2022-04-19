@@ -389,6 +389,7 @@ input:checked + .slider:before {
   justify-content: center;
   text-align: right;
   min-width: 100px;
+  /* min-height: 62px; */
 }
 
 .price-style {
@@ -410,6 +411,24 @@ input:checked + .slider:before {
   font-size: 0.8rem;
 }
 
+.learn-more {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  color: var(--main-color);
+}
+
+.learn-more svg path {
+  fill: var(--main-color);
+}
+
+.chevron {
+  transition: transform 0.2s;
+}
+
+.learn-more:hover > .chevron {
+  transform: translate(5px);
+}
 @media only screen and (min-width: 375px) {
   .plan-card {
     min-width: 23rem;
