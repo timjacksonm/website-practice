@@ -3,6 +3,7 @@
   --hover-main-color: #00a37e;
   --primary-font-color: #0d0d14;
   --secondary-font-color: #4c4d5f;
+  --tertiary-font-color: #98a0ad;
   --white-color: #fbfcff;
   --header-color: #4c525a;
 }
@@ -31,6 +32,18 @@ h1 {
   font-size: 2.2rem;
 }
 
+h2 {
+  color: var(--header-color);
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+h3 {
+  color: var(--header-color);
+  font-weight: 600;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
 /* NAVBAR */
 
 .header {
@@ -113,11 +126,10 @@ h1 {
   background-color: var(--hover-main-color);
 }
 
-/* MAIN */
+/* PRICING SECTION */
 
 .main {
   position: relative;
-  height: 1585px;
   overflow-x: hidden;
 }
 
@@ -138,7 +150,6 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 176px;
 }
 
 .section-title {
@@ -146,7 +157,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   min-width: 58rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .section-title > h1 {
@@ -253,6 +264,10 @@ input:checked + .slider:before {
   overflow: hidden;
 }
 
+.plan-card > .price-container {
+  border-bottom: 2px solid var(--main-color);
+}
+
 .card-title {
   color: var(--header-color);
   letter-spacing: 2px;
@@ -302,7 +317,6 @@ input:checked + .slider:before {
   font-family: Roboto;
   font-weight: 900;
   color: var(--header-color);
-  border-bottom: 2px solid var(--main-color);
 }
 
 .money-symbol {
@@ -331,10 +345,69 @@ input:checked + .slider:before {
   border-radius: 5px;
   font-weight: 900;
   border: none;
+  cursor: pointer;
 }
 
 .start-free-btn:hover {
   background-color: var(--hover-main-color);
+}
+
+/* SECTION 2 */
+
+.section2-title {
+  padding: 6rem 0;
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.card-container2 {
+  max-width: 58rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+.add-on-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 60px 0 rgb(2 4 69 / 5%);
+}
+
+.card-left p {
+  color: var(--tertiary-font-color);
+  font-weight: 200;
+}
+
+.price-container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  min-width: 100px;
+}
+
+.price-style {
+  color: var(--header-color);
+  font-family: Roboto, serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.price-style-free {
+  color: var(--header-color);
+  font-family: Roboto, serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.price-month2 {
+  color: var(--secondary-font-color);
+  font-size: 0.8rem;
 }
 
 @media only screen and (min-width: 375px) {
@@ -343,6 +416,13 @@ input:checked + .slider:before {
   }
   .popular-tag {
     left: 120px;
+  }
+}
+
+@media only screen and (min-width: 620px) {
+  .add-on-card {
+    max-width: 38rem;
+    padding: 2rem 2rem;
   }
 }
 
@@ -370,6 +450,7 @@ input:checked + .slider:before {
 
   .section-title {
     flex-direction: row;
+    margin-bottom: 1rem;
   }
 
   .section-title h1 {
@@ -388,5 +469,14 @@ input:checked + .slider:before {
   .popular-tag {
     top: 45px;
     left: 200px;
+  }
+
+  .add-on-card {
+    min-width: 58rem;
+    padding: 3rem 2rem;
+  }
+
+  .price-container2 {
+    text-align: left;
   }
 }
