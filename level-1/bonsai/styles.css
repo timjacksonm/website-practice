@@ -48,12 +48,9 @@ h3 {
 
 .header {
   display: flex;
-
   align-items: center;
-  max-width: 20rem;
   justify-content: center;
   padding: 1rem 0;
-  margin: auto;
   background-color: #fff;
   position: sticky;
   top: 0px;
@@ -131,7 +128,7 @@ h3 {
   background-color: var(--hover-main-color);
 }
 
-/* PRICING SECTION */
+/* SECTION 1 */
 
 .main {
   position: relative;
@@ -155,6 +152,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 1rem;
 }
 
 .section-title {
@@ -193,7 +191,7 @@ h3 {
   display: inline-block;
   width: 50px;
   height: 29px;
-  margin: 0 3rem;
+  margin: 0 2rem;
 }
 
 .switch input {
@@ -394,7 +392,7 @@ input:checked + .slider:before {
   justify-content: center;
   text-align: right;
   min-width: 100px;
-  /* min-height: 62px; */
+  min-height: 62px;
 }
 
 .price-style {
@@ -434,6 +432,40 @@ input:checked + .slider:before {
 .learn-more:hover > .chevron {
   transform: translate(5px);
 }
+
+/* SECTION 3 */
+
+.get-started-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section3-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2faff;
+  margin: 5rem 1rem;
+  padding: 3rem 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.section3-left {
+  margin-bottom: 1.5rem;
+  font-family: 'PT Serif';
+}
+
+.green-text {
+  color: var(--main-color);
+}
+
+.max-with {
+  max-width: 12.5rem;
+}
+
 @media only screen and (min-width: 375px) {
   .plan-card {
     min-width: 23rem;
@@ -446,12 +478,20 @@ input:checked + .slider:before {
   .header-left {
     margin-right: 5rem;
   }
+
+  .switch {
+    margin: 0 3rem;
+  }
 }
 
 @media only screen and (min-width: 620px) {
   .add-on-card {
     max-width: 38rem;
     padding: 2rem 2rem;
+  }
+
+  .section3-container {
+    max-width: 38rem;
   }
 }
 
@@ -465,13 +505,11 @@ input:checked + .slider:before {
   }
 
   .header {
-    justify-content: space-between;
     padding: 1.5rem 0;
-    max-width: 70rem;
   }
 
   .header-left {
-    margin-right: 10rem;
+    margin-right: 15rem;
   }
 
   .hero-shape {
@@ -512,6 +550,14 @@ input:checked + .slider:before {
   }
 
   .price-container2 {
+    text-align: left;
+  }
+
+  .section3-container {
+    flex-direction: row;
+    min-width: 58rem;
+    justify-content: space-between;
+    padding: 6.6rem 4.2rem;
     text-align: left;
   }
 }
