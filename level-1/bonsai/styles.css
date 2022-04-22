@@ -47,14 +47,19 @@ h3 {
 /* NAVBAR */
 
 .header {
+  display: flex;
+
+  align-items: center;
+  max-width: 20rem;
+  justify-content: center;
+  padding: 1rem 0;
+  margin: auto;
   background-color: #fff;
-  padding: 1.5rem 0;
   position: sticky;
   top: 0px;
   z-index: 1;
 }
 
-.header,
 .navbar-desktop,
 .nav-left,
 .nav-left > a {
@@ -64,7 +69,7 @@ h3 {
 }
 
 .header-left {
-  margin-right: 5rem;
+  margin-right: 2rem;
 }
 
 .navbar-desktop {
@@ -73,7 +78,7 @@ h3 {
 }
 
 .navbar-mobile svg {
-  width: 1.2rem;
+  width: 2rem;
   cursor: pointer;
 }
 
@@ -433,8 +438,13 @@ input:checked + .slider:before {
   .plan-card {
     min-width: 23rem;
   }
+
   .popular-tag {
     left: 120px;
+  }
+
+  .header-left {
+    margin-right: 5rem;
   }
 }
 
@@ -452,6 +462,12 @@ input:checked + .slider:before {
 
   .navbar-mobile {
     display: none;
+  }
+
+  .header {
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    max-width: 70rem;
   }
 
   .header-left {
