@@ -529,6 +529,69 @@ input:checked + .slider:before {
   fill: var(--primary-font-color);
 }
 
+/* FOOTER */
+
+.footer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.lists-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 1rem;
+  /* min-width: 70rem; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.lists-container ul > li:hover > a {
+  color: #000;
+}
+
+.product-list,
+.free-resources-list,
+.bonsai-list,
+.sub-product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+}
+
+.sub-free-resources-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+.list-title {
+  font-size: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-text {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  color: var(--tertiary-font-color);
+}
+
+.chevron-down-footer {
+  width: 1.6rem;
+}
+
+.chevron-down-footer path {
+  fill: var(--primary-font-color);
+}
+
+.margin-top {
+  margin-top: 1.2rem;
+}
+
 @media only screen and (min-width: 375px) {
   .plan-card {
     min-width: 23rem;
@@ -579,6 +642,17 @@ input:checked + .slider:before {
 
   .questions > li {
     margin: 0 1.5rem;
+  }
+
+  .footer {
+    justify-content: center;
+  }
+
+  .lists-container {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 70rem;
   }
 }
 
@@ -658,5 +732,10 @@ input:checked + .slider:before {
 
   .chevron-down {
     width: 3rem;
+  }
+
+  .lists-container {
+    width: unset;
+    min-width: 70rem;
   }
 }
