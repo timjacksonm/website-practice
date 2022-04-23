@@ -2,8 +2,7 @@
   --main-color: #00b289;
   --hover-main-color: #00a37e;
   --primary-font-color: #0d0d14;
-  --secondary-font-color: #4c4d5f;
-  --tertiary-font-color: #98a0ad;
+  --secondary-font-color: #70767f;
   --white-color: #fbfcff;
   --header-color: #4c525a;
   --roboto-font: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -31,23 +30,10 @@ a {
   color: var(--secondary-font-color);
 }
 
-h1 {
-  color: var(--header-color);
-  font-weight: 300;
-  font-size: 2.2rem;
-}
-
-h2 {
-  color: var(--header-color);
-  font-weight: 300;
-  font-size: 1.5rem;
-}
-
+h1,
+h2,
 h3 {
   color: var(--header-color);
-  font-weight: 600;
-  font-size: 1.3rem;
-  letter-spacing: 1px;
 }
 /* NAVBAR */
 
@@ -160,7 +146,7 @@ h3 {
   margin: 0 1rem;
 }
 
-.section-title {
+.section1-title-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -168,9 +154,11 @@ h3 {
   margin-bottom: 3rem;
 }
 
-.section-title > h1 {
+.section1-title-text {
+  font-size: 2.2rem;
   font-family: var(--merriweather-font);
   margin: 3rem 0;
+  font-weight: 300;
 }
 
 .options-container {
@@ -279,6 +267,8 @@ input:checked + .slider:before {
 .card-title {
   color: var(--header-color);
   letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 1.5rem;
 }
 
 .popular-tag {
@@ -315,6 +305,7 @@ input:checked + .slider:before {
   color: #fff;
   font-size: 12px;
   line-height: 18px;
+  margin-left: 0.2rem;
 }
 
 .checkmark {
@@ -389,8 +380,14 @@ input:checked + .slider:before {
   box-shadow: 0 0 60px 0 rgb(2 4 69 / 5%);
 }
 
+.add-on-title {
+  font-weight: 600;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
 .card-left p {
-  color: var(--tertiary-font-color);
+  color: var(--secondary-font-color);
   font-weight: 200;
 }
 
@@ -461,9 +458,10 @@ input:checked + .slider:before {
   width: 100%;
 }
 
-.section3-left {
-  margin-bottom: 1.5rem;
+.section3-title {
   font-family: 'PT Serif';
+  font-size: 2.2rem;
+  font-weight: 300;
 }
 
 .green-text {
@@ -525,7 +523,7 @@ input:checked + .slider:before {
 }
 
 .chevron-down path {
-  fill: var(--tertiary-font-color);
+  fill: var(--secondary-font-color);
 }
 
 .chevron-down:hover > path {
@@ -545,7 +543,6 @@ input:checked + .slider:before {
   flex-direction: column;
   justify-content: space-between;
   padding: 0 1rem;
-  /* min-width: 70rem; */
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -580,7 +577,7 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;
   gap: 0.2rem;
-  color: var(--tertiary-font-color);
+  color: var(--secondary-font-color);
 }
 
 .chevron-down-footer {
