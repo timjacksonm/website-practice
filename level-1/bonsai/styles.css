@@ -302,6 +302,8 @@ input:checked + .slider:before {
 }
 
 .perk {
+  display: flex;
+  align-items: center;
   padding-bottom: 1.5rem;
 }
 
@@ -316,7 +318,8 @@ input:checked + .slider:before {
 }
 
 .checkmark {
-  margin-right: 1rem;
+  fill: var(--main-color);
+  margin-right: 0.2rem;
 }
 
 .price-container {
